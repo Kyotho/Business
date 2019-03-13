@@ -159,16 +159,21 @@ header .header_content {
 
 .main {
   max-width: 1100px;
-  min-height: 200vh;
+  min-height: 100vh;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
-.main .tabs {
+
+.border_bottom {
+  border-bottom: 1px solid #cecece;
+}
+.tabs {
   position: relative;
   display: flex;
   margin: 30px auto;
 }
 
-.main .tabs p:not(:nth-child(4)) {
+.tabs p:not(:nth-child(4)) {
   width: 200px;
   padding: 5px 10px;
   color: #7647b3;
@@ -181,13 +186,13 @@ header .header_content {
   text-transform: uppercase;
 }
 
-.main .tabs p:not(:nth-child(3)) {
+.tabs p:not(:nth-child(3)) {
   border-right: none;
 }
 
-#active {
-  color: #ffffff;
+.tabs p:hover {
   background-color: #7647b3;
+  color: #ffffff;
 }
 
 .all_work {
@@ -312,7 +317,7 @@ header .header_content {
 
 .motto {
   max-width: 900px;
-  margin: 50px auto;
+  margin: 20px auto;
 }
 .motto h2 {
   display: inline-block;
@@ -340,5 +345,48 @@ header .header_content {
 
 .motto img {
   display: block;
-  margin: 15px auto;
+  margin: 15px auto 50px auto;
+}
+
+/* CHARTS */
+
+.charts {
+  max-width: 1100px;
+  min-height: 50vh;
+  margin: 70px auto 30px auto;
+}
+
+.charts_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  height: 180px;
+}
+
+.charts_container .chart {
+  display: flex;
+  width: 50%;
+}
+.charts_container .chart img {
+  height: 31px;
+}
+
+.charts_container .chart p {
+  margin: 1% 0 0 3%;
+  font-size: 1.5rem;
+  line-height: 20px;
+  color: #7949b5;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: italic;
+}
+
+.charts_container p {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  line-height: 20px;
+  color: #a9b2ba;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: italic;
 }
