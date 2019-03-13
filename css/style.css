@@ -159,7 +159,7 @@ header .header_content {
 
 .main {
   max-width: 1100px;
-  min-height: 100vh;
+  min-height: 200vh;
   margin: 0 auto;
 }
 .main .tabs {
@@ -277,7 +277,7 @@ header .header_content {
 }
 
 .colours {
-  max-width: 1200px;
+  max-width: 1100px;
   height: 6px;
   background-image: url(../images/Colour.png);
   background-position: right;
@@ -285,3 +285,60 @@ header .header_content {
 }
 
 /* SECOND GALLERY */
+
+.button {
+  position: relative;
+  display: flex;
+  margin: 0 0 60px 0;
+}
+
+.second_gallery {
+  margin-top: 30px;
+}
+
+.photo .image4 {
+  background-image: url(../images//layer4.png);
+}
+
+.photo .image5 {
+  background-image: url(../images//layer5.png);
+}
+
+.photo .image6 {
+  background-image: url(../images//layer6.png);
+}
+
+/* MOTTO */
+
+.motto {
+  max-width: 900px;
+  margin: 50px auto;
+}
+.motto h2 {
+  display: inline-block;
+  background-image: linear-gradient(0deg, #6235a3 0%, #7647b3 100%);
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 3.8rem;
+  line-height: 50px;
+  color: #ffffff;
+  font-family: 'Lato';
+  font-weight: 300;
+  text-align: center;
+}
+
+.motto p {
+  margin-top: 15px;
+  padding: 0 40px;
+  font-size: 1.4rem;
+  line-height: 25px;
+  color: #868f98;
+  font-family: 'Lato';
+  font-weight: 400;
+  text-align: center;
+}
+
+.motto img {
+  display: block;
+  margin: 15px auto;
+}
