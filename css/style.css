@@ -352,7 +352,7 @@ header .header_content {
 
 .charts {
   max-width: 1100px;
-  min-height: 50vh;
+  min-height: 40vh;
   margin: 70px auto 30px auto;
 }
 
@@ -396,12 +396,12 @@ header .header_content {
 
 .bios {
   background-image: url(../images/background_bios.png);
-  height: 50vh;
+  height: 70vh;
   background-position: top;
 }
 
 .images {
-  padding-top: 150px;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
 }
@@ -416,16 +416,6 @@ header .header_content {
 
 .images .portrait {
   padding: 10px;
-}
-
-.container_footer {
-  height: 50vh;
-  background-color: #160c16;
-}
-
-.copyright {
-  background-color: #0b060b;
-  height: 10vh;
 }
 
 .people {
@@ -472,9 +462,188 @@ header .header_content {
   margin: 20px 10px 0 190px;
 }
 
+.background_footer {
+  height: 60vh;
+  background-color: #160c16;
+  position: relative;
+}
+
+.container_footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container_footer .links {
+  position: absolute;
+  top: 5vh;
+  left: 1%;
+}
+
+.container_footer .links h3 {
+  font-size: 2rem;
+  line-height: 20px;
+  color: #b6a5b7;
+  font-family: 'Lato';
+  font-weight: 300;
+  margin-bottom: 1vh;
+}
+
 .container_footer .links .link a {
+  display: block;
   font-size: 1.2rem;
   line-height: 20px;
   color: #b6a5b7;
   font-family: 'Helvetica Neue';
+  text-decoration: none;
+  padding: 10px 0;
+}
+.container_footer .links .link a:hover {
+  color: #a97aac;
+}
+
+.container_footer .links .line {
+  width: 220px;
+  height: 1px;
+  background-color: #b6a5b7;
+}
+
+.about {
+  position: absolute;
+  top: 5vh;
+  left: 25%;
+  width: 40%;
+}
+
+.about h3 {
+  font-size: 2rem;
+  line-height: 20px;
+  color: #b6a5b7;
+  font-family: 'Lato';
+  font-weight: 300;
+  margin-bottom: 1vh;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 20px;
+  color: #b6a5b7;
+  font-family: 'Lato';
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.gallery {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 70%;
+  top: 5vh;
+}
+
+.gallery h3 {
+  font-size: 2rem;
+  line-height: 20px;
+  color: #b6a5b7;
+  font-family: 'Lato';
+  font-weight: 300;
+  margin-bottom: 1vh;
+}
+
+.photos {
+  margin-top: 3%;
+  margin-left: -3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 21vw;
+  height: 36vh;
+}
+
+.gallery .photos .photo_gallery {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  margin: 1%;
+  background-color: red;
+  border-radius: 3px;
+  box-shadow: 1px 0.866px 0px rgba(0, 0, 0, 0.23);
+}
+
+.gallery .photos .photo_gallery:hover {
+  cursor: pointer;
+}
+
+.gallery .photos .photo_gallery:nth-child(1) {
+  background-image: url(../images/photo1.png);
+  background-position: center;
+  background-size: cover;
+}
+.gallery .photos .photo_gallery:nth-child(2) {
+  background-image: url(../images/photo2.png);
+  background-position: center;
+  background-size: cover;
+}
+.gallery .photos .photo_gallery:nth-child(3) {
+  background-image: url(../images/photo3.png);
+  background-position: center;
+  background-size: cover;
+}
+.gallery .photos .photo_gallery:nth-child(4) {
+  background-image: url(../images/photo4.png);
+  background-position: center;
+  background-size: cover;
+}
+.gallery .photos .photo_gallery:nth-child(5) {
+  background-image: url(../images/photo5.png);
+  background-position: center;
+  background-size: cover;
+}
+.gallery .photos .photo_gallery:nth-child(6) {
+  background-image: url(../images/photo6.png);
+  background-position: center;
+  background-size: cover;
+}
+.gallery .photos .photo_gallery:nth-child(7) {
+  background-image: url(../images/photo7.png);
+  background-position: center;
+  background-size: cover;
+}
+.gallery .photos .photo_gallery:nth-child(8) {
+  background-image: url(../images/photo8.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery .photos .photo_gallery:nth-child(9) {
+  background-image: url(../images/photo9.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery .photos .photo_gallery p {
+  display: block;
+  height: 100%;
+}
+.gallery .photos .photo_gallery p:hover {
+  background-color: rgba(67, 23, 126, 0.8);
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #0b060b;
+  height: 10vh;
+}
+
+.copyright p {
+  display: block;
+  font-size: 2rem;
+  line-height: 10vh;
+  color: #b6a5b7;
+  font-family: 'Lato';
+  font-weight: 300;
+
+  margin-left: 10%;
 }
