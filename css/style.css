@@ -366,6 +366,7 @@ header .header_content {
 .charts_container .chart {
   display: flex;
   width: 50%;
+  padding: 3px 0;
 }
 .charts_container .chart img {
   height: 31px;
@@ -389,4 +390,91 @@ header .header_content {
   font-family: 'Lato';
   font-weight: 400;
   font-style: italic;
+}
+
+/*  BIOS */
+
+.bios {
+  background-image: url(../images/background_bios.png);
+  height: 50vh;
+  background-position: top;
+}
+
+.images {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.images .ellipse {
+  background-image: url(../images/Ellipse3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px 30px;
+  width: 265px;
+}
+
+.images .portrait {
+  padding: 10px;
+}
+
+.container_footer {
+  height: 50vh;
+  background-color: #160c16;
+}
+
+.copyright {
+  background-color: #0b060b;
+  height: 10vh;
+}
+
+.people {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+.people .text {
+  width: 50%;
+  margin-top: 50px;
+}
+
+.people .text h2 {
+  font-size: 2.4rem;
+  line-height: 20px;
+  color: #dfd9e8;
+  font-family: 'Lato';
+  font-weight: 300;
+  font-style: italic;
+}
+
+.people .text p {
+  font-size: 1.3rem;
+  line-height: 25px;
+  color: #dad6da;
+  font-family: 'Arial';
+}
+
+.people .text:nth-child(1) h2 {
+  margin: 0 10px 0 60px;
+}
+
+.people .text:nth-child(1) p {
+  margin: 20px 70px 0 60px;
+}
+
+.people .text:nth-child(2) h2 {
+  margin: 0 10px 0 190px;
+}
+
+.people .text:nth-child(2) p {
+  margin: 20px 10px 0 190px;
+}
+
+.container_footer .links .link a {
+  font-size: 1.2rem;
+  line-height: 20px;
+  color: #b6a5b7;
+  font-family: 'Helvetica Neue';
 }
