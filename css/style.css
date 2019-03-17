@@ -93,15 +93,6 @@ header .header_content {
   align-items: center;
   background-color: #ebebeb;
 }
-/* .details {
-  position: relative;
-  max-width: 1200px;
-  height: 80px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  background-color: #ebebeb;
-} */
 
 .details .info {
   display: flex;
@@ -177,7 +168,8 @@ header .header_content {
 }
 
 .border_bottom {
-  border-bottom: 1px solid #cecece;
+  border-bottom: 1px solid #888888;
+  width: 100%;
 }
 .tabs {
   position: relative;
@@ -219,6 +211,11 @@ header .header_content {
   font-family: 'Lato';
   font-weight: 400;
   text-align: right;
+}
+
+.all_work img {
+  padding-left: 10px;
+  height: 10px;
 }
 
 .all_work:hover {
@@ -336,15 +333,15 @@ header .header_content {
 /* MOTTO */
 
 .motto {
-  max-width: 900px;
-  margin: 20px auto;
+  max-width: 1200px;
+  margin: 70px auto;
 }
 .motto h2 {
   display: inline-block;
   background-image: linear-gradient(0deg, #6235a3 0%, #7647b3 100%);
   padding: 15px 30px;
   text-align: center;
-  font-size: 3.8rem;
+  font-size: 4.5rem;
   line-height: 50px;
   color: #ffffff;
   font-family: 'Lato';
@@ -355,7 +352,7 @@ header .header_content {
 .motto p {
   margin-top: 15px;
   padding: 0 40px;
-  font-size: 1.4rem;
+  font-size: 2.2rem;
   line-height: 25px;
   color: #868f98;
   font-family: 'Lato';
@@ -366,36 +363,39 @@ header .header_content {
 .motto img {
   display: block;
   margin: 15px auto 50px auto;
+  height: 30px;
 }
 
 /* CHARTS */
 
 .charts {
-  max-width: 1100px;
+  max-width: 1500px;
   min-height: 40vh;
-  margin: 70px auto 30px auto;
+  margin: 100px auto 0 auto;
 }
 
 .charts_container {
   display: flex;
   flex-wrap: wrap;
   padding-top: 10px;
-  height: 180px;
+  height: 20vh;
 }
 
 .charts_container .chart {
   display: flex;
+  align-items: center;
+  height: 25%;
   width: 50%;
   padding: 3px 0;
 }
 .charts_container .chart img {
-  height: 31px;
+  height: 45px;
 }
 
 .charts_container .chart p {
-  margin: 1% 0 0 3%;
-  font-size: 1.5rem;
-  line-height: 20px;
+  font-size: 2.7rem;
+  margin: 0 15px;
+  line-height: 25%;
   color: #7949b5;
   font-family: 'Lato';
   font-weight: 400;
@@ -403,8 +403,8 @@ header .header_content {
 }
 
 .charts_container p {
-  margin-top: 30px;
-  font-size: 1.2rem;
+  margin-top: 50px;
+  font-size: 2.2rem;
   line-height: 20px;
   color: #a9b2ba;
   font-family: 'Lato';
@@ -427,25 +427,30 @@ header .header_content {
 .images {
   display: flex;
   justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .images .ellipse {
   background-image: url(../images/Ellipse3.png);
   background-repeat: no-repeat;
   background-position: center;
-  margin: 10px 30px;
-  width: 265px;
+  background-size: 106%;
+  margin: 0 30px;
+  width: 350px;
 }
 
 .images .portrait {
   padding: 10px;
+  width: 250px;
+  height: 250px;
 }
 
 .people {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
 }
 
 .people .text {
@@ -454,7 +459,7 @@ header .header_content {
 }
 
 .people .text h2 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   line-height: 20px;
   color: #dfd9e8;
   font-family: 'Lato';
@@ -463,26 +468,26 @@ header .header_content {
 }
 
 .people .text p {
-  font-size: 1.3rem;
-  line-height: 25px;
+  font-size: 2rem;
+  line-height: 35px;
   color: #dad6da;
   font-family: 'Arial';
 }
 
 .people .text:nth-child(1) h2 {
-  margin: 0 10px 0 60px;
+  margin: 0 10px 0 70px;
 }
 
 .people .text:nth-child(1) p {
-  margin: 20px 70px 0 60px;
+  margin: 20px 70px 0 80px;
 }
 
 .people .text:nth-child(2) h2 {
-  margin: 0 10px 0 190px;
+  margin: 0 10px 0 230px;
 }
 
 .people .text:nth-child(2) p {
-  margin: 20px 10px 0 190px;
+  margin: 20px 10px 0 230px;
 }
 
 .background_footer {
@@ -495,8 +500,8 @@ header .header_content {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 30vh;
-  max-width: 1100px;
+
+  max-width: 1500px;
   margin: 0 auto;
   position: relative;
 }
@@ -508,7 +513,7 @@ header .header_content {
 }
 
 .container_footer .links h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 20px;
   color: #b6a5b7;
   font-family: 'Lato';
@@ -518,19 +523,19 @@ header .header_content {
 
 .container_footer .links .link a {
   display: block;
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 20px;
   color: #b6a5b7;
   font-family: 'Helvetica Neue';
   text-decoration: none;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 .container_footer .links .link a:hover {
   color: #a97aac;
 }
 
 .container_footer .links .line {
-  width: 220px;
+  width: 100%;
   height: 1px;
   background-color: #b6a5b7;
 }
@@ -543,7 +548,7 @@ header .header_content {
 }
 
 .about h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 20px;
   color: #b6a5b7;
   font-family: 'Lato';
@@ -552,8 +557,8 @@ header .header_content {
 }
 
 .about p {
-  font-size: 1.2rem;
-  line-height: 20px;
+  font-size: 2rem;
+  line-height: 30px;
   color: #b6a5b7;
   font-family: 'Lato';
   font-weight: 400;
@@ -569,7 +574,7 @@ header .header_content {
 }
 
 .gallery h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 20px;
   color: #b6a5b7;
   font-family: 'Lato';
@@ -583,8 +588,8 @@ header .header_content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 21vw;
-  height: 36vh;
+  width: 23vw;
+  height: 38vh;
 }
 
 .gallery .photos .photo_gallery {
@@ -713,8 +718,90 @@ header .header_content {
   }
 }
 
-@media (max-width: 1600px) {
-  .about {
+@media (max-width: 1650px) {
+  .width_container {
+    max-width: 1300px;
+  }
+
+  .main {
+    max-width: 1200px;
+  }
+  .header_content .logo {
+    padding: 0 15px;
+    margin: 8%;
+  }
+  .header_content .rectangle {
+    left: 40%;
+  }
+  .header_content .header_text {
+    left: 43%;
+  }
+  .slider {
+    height: 600px;
+  }
+  .slider h1 {
+    line-height: 60px;
+    font-size: 4.5rem;
+    max-width: 900px;
+  }
+  .tabs p:not(:nth-child(4)) {
+    font-size: 2.2rem;
+    width: 20%;
+    padding: 10px 10px;
+  }
+  .photo .image_container {
+    height: 22vh;
+    width: 22vw;
+  }
+  .photo .image_container p {
+    height: 22vh;
+    width: 22vw;
+    margin-left: 0;
+  }
+
+  .photo .image_container h2 {
+    width: 22vw;
+    margin: 1vh 1vw;
+  }
+
+  .photo .image_container p {
+    width: 22vw;
+    margin: 2% 5%;
+  }
+
+  .charts {
+    max-width: 1200px;
+  }
+  .images .ellipse {
+    background-image: url(../images/Ellipse3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 106%;
+    margin: 0 30px;
+    width: 250px;
+  }
+
+  .images .portrait {
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .people {
+    max-width: 1200px;
+  }
+  .people .text:nth-child(1) p {
+    margin-left: 70px;
+  }
+
+  .people .text:nth-child(2) p {
+    margin-left: 180px;
+  }
+  .people .text:nth-child(2) h2 {
+    margin-left: 180px;
+  }
+
+  /* .about {
     left: 30%;
   }
   .gallery {
@@ -722,67 +809,299 @@ header .header_content {
   }
   .photos {
     height: 27vh;
-  }
+  } */
 }
 
 @media (max-width: 1450px) {
+  .details {
+    max-width: 1200px;
+  }
+  .slider {
+    max-width: 1200px;
+  }
   .header_content .logo {
-    padding: 0 15px;
-    margin: 10%;
+    margin: 4%;
   }
   .header_content .rectangle {
-    left: 48%;
+    left: 38%;
   }
+
   .header_content .header_text {
-    left: 50%;
+    left: 42%;
+    font-size: 1.9rem;
   }
   .navbar .list {
-    right: 10%;
+    right: 6%;
+  }
+  .navbar .list .item a {
+    font-size: 1.9rem;
+    padding: 10px;
+  }
+  .details .info p {
+    padding: 0 25px;
+  }
+
+  .photo .image_container {
+    height: 20vh;
+    width: 22vw;
+  }
+  .photo p {
+    height: 23vh;
+    width: 23vw;
+    margin-left: 3vw;
+    padding-top: 10px;
+  }
+  .photo h2 {
+    font-size: 2rem;
+    width: 22vw;
+    margin-left: 3vw;
+  }
+  .colours {
+    margin-top: 1%;
+  }
+
+  .container_footer .links {
+    left: 4%;
+  }
+
+  .about {
+    width: 35%;
+    left: 30%;
   }
 }
 
 @media (max-width: 1280px) {
   .width_container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
   }
-  .header_content .logo {
-    padding-left: 30px;
-    margin: 0;
+  .main {
+    max-width: 900px;
   }
   .header_content .rectangle {
-    left: 48%;
+    left: 45%;
+    height: 19px;
   }
   .header_content .header_text {
-    left: 50%;
-  }
-  .navbar .list {
-    right: 7%;
+    left: 48%;
+    font-size: 1.4rem;
   }
   .navbar .list .item a {
-    padding: 10px 8px;
-    margin: 0 10px;
+    font-size: 1.4rem;
+  }
+  .details {
+    height: 45px;
+  }
+  .details .info {
+    height: 20px;
+  }
+  .details .info p {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  .details .social img {
+    height: 30px;
   }
 
   .slider {
-    overflow: hidden;
+    height: 450px;
   }
-  .background_footer {
-    height: 40vh;
+  .slider h1 {
+    font-size: 3rem;
+    line-height: 40px;
   }
-  .about {
-    left: 32%;
+  .tabs p:not(:nth-child(4)) {
+    font-size: 1.1rem;
+    padding: 3px 5px;
   }
-  .gallery {
-    left: 77%;
+  .all_work {
+    font-size: 1rem;
   }
-  .photos {
-    height: 23vh;
+  .photo .image_container {
+    width: 20vw;
+  }
+  .photo h2 {
+    width: 20vw;
+    margin-left: 2vw;
+    font-size: 1.5rem;
+  }
+
+  .photo p {
+    width: 20vw;
+    margin-left: 2vw;
+    font-size: 1.5rem;
+  }
+  .photo .image_container p {
+    width: 20vw;
+    height: 20vh;
+    margin: 0;
+  }
+
+  .colours {
+    margin-top: 6vh;
+  }
+  .motto h2 {
+    display: block;
+    font-size: 2.5rem;
+    line-height: 35px;
+  }
+
+  .motto p {
+    font-size: 1.5rem;
+  }
+
+  .motto img {
+    height: 20px;
+  }
+
+  .charts {
+    max-width: 800px;
+    margin-top: 50px;
+  }
+
+  .charts_container .chart img {
+    height: 25px;
+  }
+  .charts_container .chart p {
+    font-size: 1.7rem;
+  }
+  .charts_container p {
+    font-size: 1.3rem;
+  }
+  .bios {
+    height: 70vh;
+  }
+  .images .ellipse {
+    width: 200px;
+  }
+  .images .portrait {
+    width: 150px;
+    height: 150px;
+  }
+  .people .text {
+    margin-top: 20px;
+  }
+  .people .text h2 {
+    font-size: 2rem;
+  }
+  .people .text p {
+    font-size: 1.4rem;
+    line-height: 20px;
+    width: 25vw;
+  }
+  .people .text:nth-child(1) h2 {
+    margin-left: 40px;
+  }
+  .people .text:nth-child(1) p {
+    margin-left: 40px;
+  }
+
+  .people .text:nth-child(2) h2 {
+    margin-left: 150px;
+  }
+  .people .text:nth-child(2) p {
+    margin-left: 150px;
+  }
+  .container_footer .links {
+    left: 6%;
+  }
+  .container_footer .links h3 {
+    font-size: 2rem;
+  }
+  .container_footer .links .link a {
+    font-size: 1.4rem;
+    padding: 7px 0;
+  }
+  .container_footer .about h3 {
+    font-size: 2rem;
+  }
+  .about p {
+    font-size: 1.4rem;
+    line-height: 15px;
+  }
+  .container_footer .gallery h3 {
+    font-size: 2rem;
+  }
+  .copyright p {
+    font-size: 1.4rem;
   }
 }
 
-@media (max-width: 1024px) {
-  .photos {
-    height: 20vh;
+@media (max-width: 1100px) {
+  header .header_content {
+    height: 12vh;
+  }
+  .header_content .logo {
+    height: 50px;
+  }
+  .details {
+    max-width: 900px;
+  }
+  .slider {
+    max-width: 900px;
+  }
+
+  .main {
+    max-width: 800px;
+  }
+  .photo h2 {
+    font-size: 1.4rem;
+  }
+  .photo p {
+    font-size: 1.4rem;
+  }
+  .motto h2 {
+    font-size: 2.2rem;
+  }
+  .motto p {
+    font-size: 1.4rem;
+  }
+  .header_content .rectangle {
+    left: 50%;
+    height: 19px;
+  }
+  .header_content .header_text {
+    left: 54%;
+    font-size: 1.2rem;
+  }
+  .navbar .list .item a {
+    font-size: 1.2rem;
+  }
+  .people .text h2 {
+    font-size: 1.7rem;
+  }
+  .people .text p {
+    font-size: 1.2rem;
+  }
+  .people .text:nth-child(1) h2 {
+    margin-left: -40px;
+  }
+  .people .text:nth-child(1) p {
+    margin-left: -40px;
+  }
+
+  .container_footer .links {
+    left: 6%;
+  }
+  .container_footer .links h3 {
+    font-size: 1.5rem;
+  }
+  .container_footer .links .link a {
+    font-size: 1.2rem;
+    padding: 4px 0;
+  }
+  .container_footer .about h3 {
+    font-size: 1.52rem;
+  }
+  .about p {
+    padding: 5px 0;
+    font-size: 1.2rem;
+    line-height: 15px;
+  }
+  .container_footer .gallery h3 {
+    font-size: 1.5rem;
+  }
+  .copyright p {
+    font-size: 1.2rem;
   }
 }
