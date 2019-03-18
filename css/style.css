@@ -13,59 +13,79 @@ header {
   display: flex;
   background-color: #1d1b1f;
   width: 100vw;
-}
-header .header_content {
-  flex: 1;
-
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 12vh;
-  position: relative;
-}
-.header_content .logo {
-  padding: 0 30px;
-  margin: 20%;
+  height: 10vh;
 }
 
-.header_content .rectangle {
-  position: absolute;
-  top: 46%;
-  left: 53%;
-}
-
-.header_content .header_text {
-  position: absolute;
-  top: 50%;
-  left: 56%;
-  color: #ad8ed6;
-  font-size: 1.4rem;
-  font-weight: 400;
-  font-family: 'Lato', sans-serif;
-  font-style: italic;
-}
-
-.navbar {
+.nav {
   position: relative;
   flex: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
-.navbar .list {
-  display: flex;
+.logo {
   position: absolute;
-  right: 20%;
-  top: 50%;
+  left: 5%;
+  background-image: url(../images//Logo.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 10vh;
+  width: 35vw;
 }
 
-.navbar .list .item {
+.hamburger {
+  float: right;
+  font-size: 20px;
+  background-color: #1d1b1f;
+
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  color: white;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 97%;
+  justify-content: center;
+  background-color: #1d1b1f;
+  width: 100vw;
+  max-height: 40vh;
+  padding: 3vh 0;
+  text-align: center;
+}
+
+.show li a {
+  padding: 25px 0;
+}
+
+.nav .navbar {
+  display: flex;
+  flex-basis: auto;
+  position: absolute;
+}
+
+/* .nav .navbar {
+  width: 960px;
+  height: 50vh;
+}
+.show {
+  background-color: gray;
+
+  text-align: center;
+} */
+.nav .navbar .item {
   list-style: none;
 }
 
-.navbar .list .item a {
+.nav .navbar .item a {
   text-decoration: none;
 
   color: #ad8ed6;
@@ -77,7 +97,7 @@ header .header_content {
   margin: 0 10px;
 }
 
-.navbar .list .item a:hover {
+.nav .navbar .item a:hover {
   background-color: #26222b;
   border-radius: 3px;
 }
@@ -225,13 +245,14 @@ header .header_content {
 
 /* FIRST GALLERY */
 
-.first gallery {
+.first_gallery {
   display: flex;
+  min-height: 25vh;
 }
 .photo {
   display: inline-block;
   width: 33%;
-  /* height: 50%; */
+  min-height: 25vh;
 }
 
 .photo .image_container {
@@ -494,6 +515,7 @@ header .header_content {
   height: 60vh;
   background-color: #160c16;
   position: relative;
+  margin: 0 auto;
 }
 
 .container_footer {
@@ -529,6 +551,7 @@ header .header_content {
   font-family: 'Helvetica Neue';
   text-decoration: none;
   padding: 15px 0;
+  transition: all 0.8s;
 }
 .container_footer .links .link a:hover {
   color: #a97aac;
@@ -666,7 +689,7 @@ header .header_content {
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 0;
+  /* bottom: 0; */
   width: 100%;
   background-color: #0b060b;
   height: 10vh;
@@ -682,20 +705,11 @@ header .header_content {
 }
 
 @media (max-width: 1920px) {
-  .header_content .rectangle {
-    height: 30px;
-    left: 48%;
-  }
-  .header_content .header_text {
-    font-size: 2.2rem;
-    left: 50%;
-  }
-
-  .navbar .list .item a {
+  .nav .navbar .item a {
     font-size: 2.2rem;
   }
 
-  .navbar .list {
+  .nav .navbar {
     right: 5%;
   }
   .width_container {
@@ -726,16 +740,7 @@ header .header_content {
   .main {
     max-width: 1200px;
   }
-  .header_content .logo {
-    padding: 0 15px;
-    margin: 8%;
-  }
-  .header_content .rectangle {
-    left: 40%;
-  }
-  .header_content .header_text {
-    left: 43%;
-  }
+
   .slider {
     height: 600px;
   }
@@ -750,23 +755,25 @@ header .header_content {
     padding: 10px 10px;
   }
   .photo .image_container {
-    height: 22vh;
+    height: 30vh;
     width: 22vw;
   }
   .photo .image_container p {
-    height: 22vh;
+    height: 30vh;
     width: 22vw;
     margin-left: 0;
+  }
+  .photo h2 {
+    padding: 20px 10px 0 10px;
+    font-size: 2.4rem;
+  }
+  .photo p {
+    padding: 20px 10px 0 10px;
   }
 
   .photo .image_container h2 {
     width: 22vw;
     margin: 1vh 1vw;
-  }
-
-  .photo .image_container p {
-    width: 22vw;
-    margin: 2% 5%;
   }
 
   .charts {
@@ -800,16 +807,6 @@ header .header_content {
   .people .text:nth-child(2) h2 {
     margin-left: 180px;
   }
-
-  /* .about {
-    left: 30%;
-  }
-  .gallery {
-    left: 75%;
-  }
-  .photos {
-    height: 27vh;
-  } */
 }
 
 @media (max-width: 1450px) {
@@ -818,31 +815,56 @@ header .header_content {
   }
   .slider {
     max-width: 1200px;
+    height: 500px;
   }
-  .header_content .logo {
-    margin: 4%;
-  }
-  .header_content .rectangle {
-    left: 38%;
+  .slider h1 {
+    font-size: 3rem;
+    line-height: 40px;
   }
 
-  .header_content .header_text {
-    left: 42%;
-    font-size: 1.9rem;
-  }
-  .navbar .list {
+  .nav .navbar {
     right: 6%;
   }
-  .navbar .list .item a {
+  .nav .navbar .item a {
     font-size: 1.9rem;
     padding: 10px;
   }
   .details .info p {
     padding: 0 25px;
   }
+  .motto h2 {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .motto p {
+    font-size: 1.9rem;
+  }
+  .motto img {
+    height: 20px;
+  }
+  .bios {
+    height: 70vh;
+  }
+  .people .text h2 {
+    font-size: 2.3rem;
+  }
+  .people .text p {
+    font-size: 1.9rem;
+  }
+  .charts_container .chart img {
+    height: 30px;
+  }
+  .charts_container .chart p {
+    font-size: 2.2rem;
+  }
 
   .photo .image_container {
-    height: 20vh;
+    height: 28vh;
+    width: 22vw;
+  }
+  .photo .image_container p {
+    height: 28vh;
     width: 22vw;
   }
   .photo p {
@@ -850,23 +872,48 @@ header .header_content {
     width: 23vw;
     margin-left: 3vw;
     padding-top: 10px;
+    font-size: 1.9rem;
   }
   .photo h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     width: 22vw;
     margin-left: 3vw;
   }
+  .container_footer {
+    height: 60vh;
+  }
   .colours {
-    margin-top: 1%;
+    margin-top: 5%;
+  }
+  .background_footer {
+    height: 70vh;
   }
 
   .container_footer .links {
     left: 4%;
   }
 
+  .container_footer .links h3 {
+    font-size: 2.3rem;
+  }
+
+  .container_footer .links .link a {
+    font-size: 1.9rem;
+  }
+
   .about {
     width: 35%;
     left: 30%;
+  }
+  .gallery h3 {
+    font-size: 2.3rem;
+  }
+
+  .about h3 {
+    font-size: 2.3rem;
+  }
+  .about p {
+    font-size: 1.9rem;
   }
 }
 
@@ -878,15 +925,8 @@ header .header_content {
   .main {
     max-width: 900px;
   }
-  .header_content .rectangle {
-    left: 45%;
-    height: 19px;
-  }
-  .header_content .header_text {
-    left: 48%;
-    font-size: 1.4rem;
-  }
-  .navbar .list .item a {
+
+  .nav .navbar .item a {
     font-size: 1.4rem;
   }
   .details {
@@ -918,23 +958,24 @@ header .header_content {
     font-size: 1rem;
   }
   .photo .image_container {
-    width: 20vw;
+    width: 22vw;
+    height: 28vh;
+  }
+
+  .photo .image_container p {
+    height: 28vh;
+    width: 22vw;
   }
   .photo h2 {
     width: 20vw;
-    margin-left: 2vw;
-    font-size: 1.5rem;
+    margin-left: 1vw;
+    font-size: 1.4rem;
   }
 
   .photo p {
     width: 20vw;
-    margin-left: 2vw;
-    font-size: 1.5rem;
-  }
-  .photo .image_container p {
-    width: 20vw;
-    height: 20vh;
-    margin: 0;
+    margin-left: 1vw;
+    font-size: 1.4rem;
   }
 
   .colours {
@@ -968,9 +1009,7 @@ header .header_content {
   .charts_container p {
     font-size: 1.3rem;
   }
-  .bios {
-    height: 70vh;
-  }
+
   .images .ellipse {
     width: 200px;
   }
@@ -1002,6 +1041,12 @@ header .header_content {
   .people .text:nth-child(2) p {
     margin-left: 150px;
   }
+  .background_footer {
+    height: 50vh;
+  }
+  .container_footer {
+    height: 50vh;
+  }
   .container_footer .links {
     left: 6%;
   }
@@ -1028,12 +1073,6 @@ header .header_content {
 }
 
 @media (max-width: 1100px) {
-  header .header_content {
-    height: 12vh;
-  }
-  .header_content .logo {
-    height: 50px;
-  }
   .details {
     max-width: 900px;
   }
@@ -1045,10 +1084,10 @@ header .header_content {
     max-width: 800px;
   }
   .photo h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .photo p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .motto h2 {
     font-size: 2.2rem;
@@ -1056,15 +1095,8 @@ header .header_content {
   .motto p {
     font-size: 1.4rem;
   }
-  .header_content .rectangle {
-    left: 50%;
-    height: 19px;
-  }
-  .header_content .header_text {
-    left: 54%;
-    font-size: 1.2rem;
-  }
-  .navbar .list .item a {
+
+  .nav .navbar .item a {
     font-size: 1.2rem;
   }
   .people .text h2 {
@@ -1103,5 +1135,367 @@ header .header_content {
   }
   .copyright p {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .photo .image_container,
+  .photo .image_container p {
+    height: 14vh;
+  }
+
+  .colours {
+    margin-top: 1vh;
+  }
+  .charts {
+    min-height: 30vh;
+  }
+  .charts_container .chart {
+    height: 15%;
+  }
+  .bios {
+    height: 40vh;
+  }
+  .background_footer {
+    height: 40vh;
+  }
+  .container_footer {
+    height: 40vh;
+  }
+  .copyright {
+    height: 4vh;
+  }
+}
+
+@media (max-width: 960px) {
+  .logo {
+    width: 45vw;
+    height: 13vh;
+  }
+  header {
+    height: 20vh;
+  }
+  .nav .navbar .item a {
+    font-size: 1.8rem;
+    padding: 0;
+    line-height: 30px;
+  }
+  .nav .navbar .item a:hover {
+    background-color: #1d1b1f;
+    color: #c498ff;
+  }
+  .width_container {
+    max-width: 700px;
+  }
+  .main {
+    max-width: 600px;
+  }
+  .slider {
+    height: 300px;
+  }
+  .slider h1 {
+    font-size: 2.3rem;
+    line-height: 25px;
+  }
+  .tabs p:not(:nth-child(4)) {
+    font-size: 0.9rem;
+    padding: 2px 3px;
+  }
+  .all_work {
+    font-size: 0.8rem;
+  }
+  .photo .image_container {
+    width: 22vw;
+  }
+  .photo .image_container p {
+    width: 22vw;
+  }
+  .photo h2 {
+    font-size: 1rem;
+    line-height: 14px;
+
+    margin: 10px auto 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+  .photo p {
+    font-size: 1rem;
+    line-height: 14px;
+    margin: 10px auto 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+  .colours {
+    margin-top: 15vh;
+  }
+  .motto h2 {
+    font-size: 1.9rem;
+    line-height: 25px;
+  }
+  .motto p {
+    font-size: 1rem;
+  }
+
+  .motto img {
+    height: 14px;
+  }
+
+  .motto {
+    margin-bottom: 30px;
+  }
+  .charts {
+    max-width: 600px;
+    margin-bottom: 20vh;
+  }
+  .charts_container {
+    height: 28vh;
+  }
+  .charts_container .chart {
+    padding: 5px 0;
+  }
+  .charts_container .chart img {
+    height: 18px;
+  }
+  .charts_container p {
+    margin-top: 7vh;
+  }
+  .bios {
+    height: 80vh;
+  }
+  .people {
+    max-width: 600px;
+  }
+  .images .ellipse {
+    width: 120px;
+  }
+  .images .portrait {
+    width: 100px;
+    height: 100px;
+  }
+  .people .text:nth-child(1) h2 {
+    margin-left: 3vw;
+    font-size: 1rem;
+  }
+  .people .text:nth-child(1) p {
+    margin-left: 3vw;
+    margin-top: 10px;
+
+    font-size: 0.9rem;
+  }
+  .people .text:nth-child(2) h2 {
+    margin-left: 12vw;
+    font-size: 1rem;
+  }
+  .people .text:nth-child(2) p {
+    margin-left: 12vw;
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  .background_footer {
+    height: 60vh;
+  }
+  .container_footer .links .link a {
+    font-size: 0.9rem;
+  }
+  .about {
+    left: 30%;
+  }
+
+  .about p {
+    font-size: 0.9rem;
+  }
+  .gallery .photos .photo_gallery {
+    height: 40%;
+  }
+
+  .copyright p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 668px) and (orientation: landscape) {
+  .width_container {
+    max-width: 500px;
+  }
+  .main {
+    max-width: 450px;
+  }
+  .charts {
+    max-width: 450px;
+  }
+  .slider {
+    height: 200px;
+  }
+  .nav .navbar .item a {
+    font-size: 1.2rem;
+    line-height: 20px;
+  }
+  .details {
+    align-items: center;
+    height: 20vh;
+  }
+
+  .details .info {
+    flex-direction: column;
+    height: 100%;
+  }
+  .details .info p {
+    padding: 2px 10px;
+  }
+  .details .divider {
+    display: none;
+  }
+  .details .social {
+    display: flex;
+    flex-direction: column;
+  }
+  .tabs p:not(:nth-child(4)) {
+    font-size: 0.9rem;
+    line-height: 14px;
+  }
+  .photo {
+    width: 32%;
+  }
+  .photo .image_container {
+    width: 18vw;
+    height: 22vh;
+  }
+  .photo .image_container p {
+    width: 18vw;
+    height: 22vh;
+  }
+  .photo h2 {
+    height: 5vh;
+  }
+  .photo p {
+    padding-top: 2vh;
+  }
+
+  .background_footer {
+    height: 70vh;
+  }
+}
+@media (max-width: 668px) and (orientation: landscape) {
+  header {
+    height: 25vh;
+  }
+  .logo {
+    width: 60vw;
+  }
+  .details {
+    height: 25vh;
+  }
+  .slider h1 {
+    max-width: 400px;
+    font-size: 1.5rem;
+    line-height: 20px;
+    padding: 8px;
+  }
+  .first_gallery {
+    min-height: 80vh;
+  }
+  .photo {
+    min-height: 80vh;
+  }
+  .images .portrait {
+    width: 80px;
+    height: 80px;
+  }
+  .charts_container .chart img {
+    height: 15px;
+  }
+  .charts_container .chart p {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+  .charts_container p {
+    font-size: 0.9rem;
+  }
+  .bios {
+    height: 90vh;
+  }
+  .images .ellipse {
+    margin: 0 10px;
+  }
+  .background_footer {
+    height: 80vh;
+  }
+  .about {
+    left: 34%;
+  }
+}
+@media (max-width: 569px) and (orientation: landscape) {
+  .background_footer {
+    height: 90vh;
+  }
+  .gallery {
+    left: 73%;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .width_container {
+    max-width: 700px;
+  }
+
+  .nav .navbar .item a {
+    font-size: 2rem;
+    margin: 0 2px;
+  }
+
+  .slider {
+    max-width: 700px;
+  }
+  .details {
+    max-width: 700px;
+  }
+  .details .info p {
+    padding: 0 10px;
+  }
+
+  .main {
+    max-width: 600px;
+  }
+
+  .slider h1 {
+    max-width: 600px;
+  }
+
+  .charts {
+    max-width: 600px;
+  }
+
+  .charts_container .chart img {
+    height: 20px;
+  }
+  .images .ellipse {
+    width: 120px;
+    margin: 0 15px;
+  }
+  .images .portrait {
+    height: 100px;
+    width: 100px;
+  }
+
+  .people .text:nth-child(1) h2 {
+    margin-left: -11%;
+  }
+  .people .text:nth-child(1) p {
+    margin-left: -11%;
+  }
+  .people .text:nth-child(2) h2 {
+    margin-left: 40%;
+  }
+  .people .text:nth-child(2) p {
+    margin-left: 40%;
+  }
+  .about {
+    left: 34%;
+  }
+  .gallery {
+    left: 73%;
+  }
+  .photos {
+    height: 18vh;
   }
 }
