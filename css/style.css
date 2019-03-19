@@ -1432,6 +1432,17 @@ header {
     left: 73%;
   }
 }
+@media (max-width: 1024px) and (orientation: portrait) {
+  .background_footer {
+    height: 30vh;
+  }
+  .container_footer {
+    height: 30vh;
+  }
+  .photos {
+    height: 20vh;
+  }
+}
 
 @media (max-width: 768px) and (orientation: portrait) {
   .width_container {
@@ -1446,6 +1457,9 @@ header {
   .slider {
     max-width: 700px;
   }
+  header {
+    height: 10vh;
+  }
   .details {
     max-width: 700px;
   }
@@ -1456,17 +1470,31 @@ header {
   .main {
     max-width: 600px;
   }
+  .photo h2 {
+    font-size: 1.1rem;
+  }
+  .photo p {
+    height: 15vh;
+    font-size: 1rem;
+  }
 
   .slider h1 {
     max-width: 600px;
   }
+  .colours {
+    margin-top: 5vh;
+  }
 
   .charts {
     max-width: 600px;
+    margin-block-end: 5vh;
   }
 
   .charts_container .chart img {
     height: 20px;
+  }
+  .bios {
+    height: 40vh;
   }
   .images .ellipse {
     width: 120px;
@@ -1489,6 +1517,7 @@ header {
   .people .text:nth-child(2) p {
     margin-left: 40%;
   }
+
   .about {
     left: 34%;
   }
@@ -1496,6 +1525,224 @@ header {
     left: 73%;
   }
   .photos {
-    height: 18vh;
+    height: 15vh;
+  }
+}
+
+@media (max-width: 415px) and (orientation: portrait) {
+  .width_container {
+    max-width: 100vw;
+  }
+
+  .slider {
+    height: 250px;
+  }
+  .slider h1 {
+    max-width: 300px;
+    font-size: 1.5rem;
+    line-height: 20px;
+    padding: 10px;
+  }
+  .main {
+    max-width: 90vw;
+  }
+  .logo {
+    width: 60vw;
+    height: 100%;
+    background-position-y: 65%;
+  }
+  .nav .navbar .item a {
+    font-size: 1.5rem;
+    line-height: 20px;
+  }
+  .details {
+    align-items: center;
+    height: 10vh;
+  }
+  .details .social img {
+    padding: 1px;
+  }
+
+  .details .info {
+    flex-direction: column;
+    height: 100%;
+  }
+  .details .info p {
+    padding: 2px 10px;
+  }
+  .details .divider {
+    display: none;
+  }
+  .details .social {
+    display: flex;
+    flex-direction: column;
+  }
+  .tabs {
+    margin: 15px 0;
+  }
+  .tabs p:not(:nth-child(4)) {
+    padding: 2px;
+    line-height: 10px;
+  }
+  .all_work {
+    top: 10%;
+  }
+  .first_gallery {
+    flex-wrap: wrap;
+  }
+  .photo {
+    width: 100%;
+    margin-bottom: 3vh;
+  }
+  .photo .image_container {
+    width: 70vw;
+    height: 25vh;
+  }
+  .photo .image_container p {
+    width: 70vw;
+    height: 25vh;
+  }
+  .photo h2 {
+    font-size: 1.6rem;
+    width: 70vw;
+  }
+  .photo p {
+    font-size: 1.4rem;
+    line-height: 18px;
+    width: 70vw;
+  }
+  .charts {
+    max-width: 90vw;
+  }
+  .charts_container {
+    height: 22vh;
+  }
+  .charts_container .chart img {
+    height: 12px;
+  }
+  .charts_container .chart p {
+    font-size: 1.2rem;
+  }
+  .charts_container p {
+    font-size: 1rem;
+  }
+
+  .people {
+    max-width: 90vw;
+    margin: 0 5vw;
+  }
+  .people .text {
+    margin: 1vh 1vh 0 4vw;
+  }
+  .people .text:nth-child(1) h2 {
+    margin: 0;
+    width: 100%;
+  }
+  .people .text:nth-child(1) p {
+    margin: 0;
+    width: 100%;
+  }
+  .people .text:nth-child(2) h2 {
+    margin: 0;
+    width: 100%;
+  }
+  .people .text:nth-child(2) p {
+    margin: 0;
+    width: 100%;
+  }
+  .images .ellipse {
+    display: none;
+  }
+  .images .portrait {
+    width: 90px;
+    height: 90px;
+  }
+  .background_footer {
+    height: 115vh;
+    max-width: 100vw;
+  }
+  .container_footer {
+    flex-direction: column;
+    max-width: 100vw;
+    height: 115vh;
+  }
+  .links {
+    /* position: static; */
+    width: 90%;
+    height: 25vh;
+    left: 0;
+    top: 0;
+  }
+  .about {
+    /* position: static; */
+    height: 20vh;
+    width: 90%;
+    left: 6%;
+    top: 35%;
+  }
+  .gallery {
+    /* position: static; */
+    width: 90%;
+    height: 45vh;
+    left: 6%;
+    top: 60%;
+  }
+  .photos {
+    width: 100%;
+    height: 30vh;
+
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+@media (max-width: 376px) and (orientation: portrait) {
+  .logo {
+    width: 70vw;
+    background-position-y: 50%;
+  }
+  .details {
+    height: 12vh;
+  }
+  .images .portrait {
+    height: 80px;
+    width: 80px;
+    padding: 2px;
+  }
+  .about {
+    top: 30%;
+  }
+  .gallery {
+    width: 90%;
+    height: 45vh;
+    left: 6%;
+    top: 56%;
+  }
+}
+
+@media (max-width: 356px) and (orientation: portrait) {
+}
+.images .portrait {
+  height: 60px;
+  width: 60px;
+  padding: 1px;
+}
+.photo {
+  margin-bottom: 5vh;
+}
+.charts_container .chart p {
+  margin: 0 5px;
+  font-size: 10px;
+}
+.charts_container .chart img {
+  height: 10px;
+}
+.images .portrait:nth-child(2) {
+  margin-right: 7vh;
+}
+
+@media (max-width: 320px) and (orientation: portrait) {
+  .photo {
+    margin-bottom: 7vh;
   }
 }
