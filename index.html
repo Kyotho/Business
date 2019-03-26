@@ -14,18 +14,18 @@
 
   <body>
     <header>
-      <nav class="nav">
+      <nav class="nav" id="main_nav">
         <div class="logo"></div>
         <div id="hamburger">
           <span></span>
           <span></span>
         </div>
         <ul class="navbar">
-          <li class="item"><a href="#">Home</a></li>
-          <li class="item"><a href="#">About</a></li>
-          <li class="item"><a href="#">Our Services</a></li>
-          <li class="item"><a href="#">Our Teams</a></li>
-          <li class="item"><a href="#">Contact</a></li>
+          <li class="item"><a href="#home">Home</a></li>
+          <li class="item"><a href="#about">About</a></li>
+          <li class="item"><a href="#our_services">Our Services</a></li>
+          <li class="item"><a href="#our_teams">Our Teams</a></li>
+          <li class="item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -43,14 +43,14 @@
           <img src="images/Twitter.png" alt="" />
         </div>
       </div>
-      <div class="slider">
+      <div class="slider" id="home">
         <h1>
           Pozzie piece of piss lets get some uluru. It'll be durry flamin it'll
           be bounce
         </h1>
       </div>
       <div class="border_bottom">
-        <div class="main">
+        <div class="main" id="about">
           <div class="tabs">
             <p>latest work</p>
             <p>recent projects</p>
@@ -152,7 +152,7 @@
           </div>
         </div>
       </div>
-      <section class="charts">
+      <section class="charts" id="our_services">
         <div class="tabs">
           <p>latest work</p>
           <p>recent projects</p>
@@ -195,7 +195,7 @@
         </div>
       </section>
     </div>
-    <section class="bios">
+    <section class="bios" id="our_teams">
       <div class="images">
         <img src="images/a.png" alt="" class="portrait" />
         <img src="images/b.png" alt="" class="portrait" />
@@ -222,7 +222,7 @@
         </div>
       </div>
     </section>
-    <footer class="background_footer">
+    <footer class="background_footer" id="contact">
       <div class="container_footer">
         <div class="links">
           <h3>Links</h3>
@@ -280,6 +280,10 @@
     <div class="copyright">
       <p>&copy Copyright 2013 FreebiesXpress.com</p>
     </div>
+    <button onclick="topFunction()" id="top_button" title="Go to top">
+      <ion-icon name="arrow-round-up" class="icon"></ion-icon>
+    </button>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/main.js"></script>
   </body>

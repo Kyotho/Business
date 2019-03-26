@@ -13,7 +13,7 @@ header {
   display: flex;
   background-color: #1d1b1f;
   width: 100vw;
-  height: 10vh;
+  height: 12vh;
 }
 
 .nav {
@@ -57,17 +57,9 @@ header {
   display: flex;
   flex-basis: auto;
   position: absolute;
+  right: 5vw;
 }
 
-/* .nav .navbar {
-  width: 960px;
-  height: 50vh;
-}
-.show {
-  background-color: gray;
-
-  text-align: center;
-} */
 .nav .navbar .item {
   list-style: none;
 }
@@ -76,7 +68,7 @@ header {
   text-decoration: none;
 
   color: #ad8ed6;
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
   font-style: italic;
@@ -149,7 +141,7 @@ header {
   background-position: center;
   background-size: cover;
   max-width: 1600px;
-  height: 800px;
+  height: 700px;
   margin: 0 auto;
 }
 
@@ -691,7 +683,32 @@ header {
   font-weight: 300;
 }
 
-@media (max-width: 1920px) {
+#top_button {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(173, 142, 214, 0.9);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+#top_button .icon {
+  font-size: 30px;
+}
+
+#top_button:hover {
+  background-color: #6235a3;
+}
+
+/*   MEDIA QUERIES    */
+
+/* @media (max-width: 1920px) {
   .nav .navbar .item a {
     font-size: 2.2rem;
   }
@@ -717,11 +734,12 @@ header {
   .copyright {
     height: 8vh;
   }
-}
+} */
 
 @media (max-width: 1650px) {
   .width_container {
     max-width: 1300px;
+    margin: 0 auto;
   }
 
   .main {
@@ -1349,7 +1367,7 @@ header {
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    top: 6px;
+    top: -4px;
     left: 8px;
   }
 
@@ -1358,11 +1376,10 @@ header {
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    top: 30px;
+    top: 20px;
     left: 8px;
   }
 
-  /* aaa */
   .logo {
     width: 45vw;
     height: 13vh;
@@ -1792,6 +1809,14 @@ header {
 
     margin: 0 auto;
     align-items: center;
+  }
+
+  #top_button {
+    bottom: 20px;
+    right: 20px;
+  }
+  #top_button .icon {
+    font-size: 20px;
   }
 }
 
