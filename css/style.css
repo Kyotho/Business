@@ -1585,7 +1585,7 @@ header {
     left: 35%;
   }
 }
-@media (max-width: 569px) and (orientation: landscape) {
+@media (max-width: 600px) and (orientation: landscape) {
   .container__width {
     max-width: 100%;
   }
