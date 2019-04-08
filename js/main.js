@@ -3,12 +3,12 @@ $(document).ready(function() {
   menuSlidedown();
   hamburger();
 
-  // actionwindowclick(' #hamburger, .navbar', function() {
+  // actionwindowclick(' #hamburger, .navbar__nav', function() {
   //   var windowWidth = parseInt($(window).width(), 10);
 
-  //   // && $('.navbar').is(':visible')
+  //   // && $('.navbar__nav').is(':visible')
   //   if (windowWidth <= 960) {
-  //     $('.navbar').fadeOut(1000);
+  //     $('.navbar__nav').fadeOut(1000);
   //     //  $('#hamburger').toggleClass('open');
   //   }
   // });
@@ -22,21 +22,21 @@ function navbarCollapse() {
   var windowWidth = parseInt($(window).width(), 10);
 
   if (windowWidth <= 960) {
-    $('.navbar').css('display', 'none');
-    $('.navbar').addClass('show');
+    $('.navbar__nav').css('display', 'none');
+    $('.navbar__nav').addClass('show');
 
-    $('.item').css('display', 'block');
+    $('.nav__item  ').css('display', 'block');
   } else {
-    $('.navbar').css('display', 'block');
-    $('.navbar').removeClass('show');
+    $('.navbar__nav').css('display', 'block');
+    $('.navbar__nav').removeClass('show');
 
-    $('.item').css('display', 'inline-block');
+    $('.nav__item  ').css('display', 'inline-block');
   }
 }
 
 function menuSlidedown() {
   $('#hamburger').click(function() {
-    $('.navbar').slideToggle('slow');
+    $('.navbar__nav').slideToggle('slow');
   });
 }
 
@@ -55,9 +55,9 @@ function scrollFunction() {
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    document.getElementById('top_button').style.display = 'block';
+    document.getElementById('button__top').style.display = 'block';
   } else {
-    document.getElementById('top_button').style.display = 'none';
+    document.getElementById('button__top').style.display = 'none';
   }
 }
 
@@ -117,7 +117,7 @@ function currentSlide(n) {
 function showSlide(n) {
   var i;
 
-  var slides = document.getElementsByClassName('slider');
+  var slides = document.getElementsByClassName('slideshow__slider');
 
   var dots = document.getElementsByClassName('dots');
 
