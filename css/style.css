@@ -304,6 +304,7 @@ header {
 .main__tabs p:hover {
   background-color: #7647b3;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .main__paragraph {
@@ -345,10 +346,14 @@ header {
   width: 33.333%;
   height: 100%;
 }
-.gallery__image {
+.gallery__box {
   width: 90%;
   height: 50%;
   margin: 2% auto 0 auto;
+}
+.gallery__image {
+  width: 100%;
+  height: 100%;
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
@@ -485,7 +490,7 @@ header {
   height: 35px;
 }
 
-.chart--single p {
+.chart--single > p {
   font-size: 2.7rem;
   margin: 0 15px;
   line-height: 25%;
@@ -495,7 +500,7 @@ header {
   font-style: italic;
 }
 
-.charts__chart p {
+.charts__chart > p {
   margin-top: 50px;
   font-size: 2.2rem;
   line-height: 20px;
@@ -694,62 +699,58 @@ header {
   margin: 1%;
   border-radius: 3px;
   box-shadow: 1px 0.866px 0px rgba(0, 0, 0, 0.23);
+  background-size: 100%;
+  transition: 0.4s;
+  background-repeat: no-repeat;
 }
 
 .footer__photo:hover {
   cursor: pointer;
+  background-size: 130%;
 }
 
 .footer__photo:nth-child(1) {
   background-image: url(../images/photo1.png);
   background-position: center;
-  background-size: cover;
 }
 .footer__photo:nth-child(2) {
   background-image: url(../images/photo2.png);
   background-position: center;
-  background-size: cover;
 }
 .footer__photo:nth-child(3) {
   background-image: url(../images/photo3.png);
   background-position: center;
-  background-size: cover;
 }
 .footer__photo:nth-child(4) {
   background-image: url(../images/photo4.png);
   background-position: center;
-  background-size: cover;
 }
 .footer__photo:nth-child(5) {
   background-image: url(../images/photo5.png);
   background-position: center;
-  background-size: cover;
 }
 .footer__photo:nth-child(6) {
   background-image: url(../images/photo6.png);
   background-position: center;
-  background-size: cover;
 }
 .footer__photo:nth-child(7) {
   background-image: url(../images/photo7.png);
   background-position: center;
-  background-size: cover;
 }
 .footer__photo:nth-child(8) {
   background-image: url(../images/photo8.png);
   background-position: center;
-  background-size: cover;
 }
 
 .footer__photo:nth-child(9) {
   background-image: url(../images/photo9.png);
   background-position: center;
-  background-size: cover;
 }
 
 .footer__photo > p {
   display: block;
   height: 100%;
+  transition: 0.4s;
 }
 
 .footer__photo > p:hover {
@@ -902,7 +903,8 @@ header {
   .container__gallery {
     height: 60vh;
   }
-  .gallery__image {
+
+  .gallery__box {
     height: 40%;
   }
 
@@ -1037,7 +1039,7 @@ header {
     height: 75vh;
   }
 
-  .gallery__image {
+  .gallery__box {
     height: 35%;
   }
 
@@ -1586,7 +1588,7 @@ header {
   .gallery__photo > p {
     font-size: 1.1rem;
   }
-  .gallery__image {
+  .gallery__box {
     height: 30%;
   }
   .container__charts {
@@ -2094,7 +2096,6 @@ header {
   }
   .navbar__logo {
     width: 60vw;
-
     background-position-y: 65%;
   }
   .nav__item > a {
@@ -2143,14 +2144,11 @@ header {
     margin-bottom: 3vh;
     height: 33%;
   }
-  .gallery__image {
+  .gallery__box {
     width: 70vw;
     height: 35vh;
   }
-  .gallery__image > p {
-    width: 70vw;
-    height: 35vh;
-  }
+
   .gallery__photo > h2 {
     font-size: 2rem;
     width: 70vw;
@@ -2340,12 +2338,10 @@ header {
   .gallery__photo > h2 {
     height: 6%;
   }
-  .gallery__image {
+  .gallery__box {
     height: 25vh;
   }
-  .gallery__image > p {
-    height: 25vh;
-  }
+
   .container__motto > h2 {
     font-size: 1.5rem;
     line-height: 20px;

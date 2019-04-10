@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="css/lightbox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -108,7 +108,14 @@
           <!-- GALLERY START -->
           <div class="container__gallery">
             <div class="gallery__photo">
-              <div class="gallery__image image1"><p></p></div>
+              <a
+                class="gallery__box"
+                href="/images/layer1.png"
+                data-lightbox="image1"
+                data-title="We're going khe sanh no"
+              >
+                <div class="gallery__image image1"><p></p></div
+              ></a>
 
               <h2>We're going khe sanh no</h2>
               <p>
@@ -119,7 +126,13 @@
               </p>
             </div>
             <div class="gallery__photo">
-              <div class="gallery__image image2"><p></p></div>
+              <a
+                class="gallery__box"
+                href="/images/layer2.png"
+                data-lightbox="image2"
+                data-title="As dry as a knock with lets get"
+                ><div class="gallery__image image2"><p></p></div
+              ></a>
 
               <h2>As dry as a knock with lets get</h2>
               <p>
@@ -130,7 +143,13 @@
               </p>
             </div>
             <div class="gallery__photo">
-              <div class="gallery__image image3"><p></p></div>
+              <a
+                class="gallery__box"
+                href="/images/layer3.png"
+                data-lightbox="image3"
+                data-title="Grab us a slabs bloody as"
+                ><div class="gallery__image image3"><p></p></div
+              ></a>
 
               <h2>Grab us a slabs bloody as</h2>
               <p>
@@ -149,8 +168,13 @@
           </div>
           <div class="container__gallery container__gallery--static">
             <div class="gallery__photo">
-              <div class="gallery__image image4"><p></p></div>
-
+              <a
+                class="gallery__box"
+                href="/images/layer4.png"
+                data-lightbox="image4"
+                data-title="We're going khe sanh no"
+                ><div class="gallery__image image4"><p></p></div>
+              </a>
               <h2>We're going khe sanh no</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -160,8 +184,14 @@
               </p>
             </div>
             <div class="gallery__photo">
-              <div class="gallery__image image5"><p></p></div>
-
+              <a
+                class="gallery__box"
+                href="/images/layer5.png"
+                data-lightbox="image5"
+                data-title="As dry as a knock with lets get"
+              >
+                <div class="gallery__image image5"><p></p></div>
+              </a>
               <h2>As dry as a knock with lets get</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -171,8 +201,13 @@
               </p>
             </div>
             <div class="gallery__photo">
-              <div class="gallery__image image6"><p></p></div>
-
+              <a
+                class="gallery__box"
+                href="/images/layer6.png"
+                data-lightbox="image6"
+                data-title="Grab us a slabs bloody as"
+                ><div class="gallery__image image6"><p></p></div>
+              </a>
               <h2>Grab us a slabs bloody as</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -350,7 +385,9 @@
     <button onclick="topFunction()" id="button__top" title="Go to top">
       <ion-icon name="arrow-round-up" class="icon"></ion-icon>
     </button>
+
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/main.js"></script>
   </body>
