@@ -102,6 +102,7 @@ $('#main_nav a').on('click', function(e) {
   }
 });
 
+// SLIDER
 var slideIndex = 1;
 
 showSlide(slideIndex);
