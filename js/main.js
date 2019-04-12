@@ -2,16 +2,6 @@ $(document).ready(function() {
   navbarCollapse();
   menuSlidedown();
   hamburger();
-
-  // actionwindowclick(' #hamburger, .navbar__nav', function() {
-  //   var windowWidth = parseInt($(window).width(), 10);
-
-  //   // && $('.navbar__nav').is(':visible')
-  //   if (windowWidth <= 960) {
-  //     $('.navbar__nav').fadeOut(1000);
-  //     //  $('#hamburger').toggleClass('open');
-  //   }
-  // });
 });
 
 $(window).resize(function() {
@@ -41,8 +31,13 @@ function menuSlidedown() {
 }
 
 function hamburger() {
+  // Toggle class open
   $('#hamburger').click(function() {
     $(this).toggleClass('open');
+  });
+  //Closing hamburger menu after clicking link
+  $('#main_nav a').on('click', function() {
+    $('#hamburger').click();
   });
 }
 
@@ -55,30 +50,13 @@ function scrollFunction() {
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
-    document.getElementById('button__top').style.display = 'block';
+    $('#button__top').fadeIn();
   } else {
-    document.getElementById('button__top').style.display = 'none';
+    $('#button__top').fadeOut();
   }
 }
 
-function topFunction() {
-  document.body.scrollTop = 0; // for Safari
-  document.documentElement.scrollTop = 0; // for Chrome, Firefox etc
-}
-
-//FUNCTION FOR CLOSING NAVBAR VIA CLICKING ANYWHERE
-// function actionwindowclick(elem, action) {
-//   $(window).on('click', function(e) {
-//     if (
-//       !$(elem).is(e.target) && // if the target of the click isn't the container...
-//       $(elem).has(e.target).length === 0
-//     ) {
-//       // ... nor a descendant of the container
-//       action();
-//     }
-//   });
-// }
-
+// SMOOTH SCROLL FOR NAVBAR
 $('#main_nav a').on('click', function(e) {
   // Check for a hash value
   if (this.hash !== '') {
@@ -102,9 +80,16 @@ $('#main_nav a').on('click', function(e) {
   }
 });
 
+// SMOOTH SCROLL FOR TOP BUTTON
+function smoothTopButton() {
+  $('#button__top').click(function() {
+    $('html, body').animate({ scrollTop: 0 }, 600);
+    return false;
+  });
+}
+
 // SLIDER
 var slideIndex = 1;
-
 showSlide(slideIndex);
 
 function plusSlides(n) {
@@ -117,9 +102,7 @@ function currentSlide(n) {
 
 function showSlide(n) {
   var i;
-
   var slides = document.getElementsByClassName('slideshow__slider');
-
   var dots = document.getElementsByClassName('dots');
 
   if (n > slides.length) {
@@ -139,6 +122,5 @@ function showSlide(n) {
   }
 
   slides[slideIndex - 1].style.display = 'block';
-
   dots[slideIndex - 1].className += ' active';
 }

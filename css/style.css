@@ -13,7 +13,7 @@ html {
 
 /* NAVBAR */
 
-header {
+.main__header {
   display: flex;
   background-color: #1d1b1f;
   width: 100%;
@@ -53,7 +53,7 @@ header {
   text-align: center;
 }
 
-.show li a {
+.show li > a {
   padding: 25px 0;
 }
 
@@ -1209,7 +1209,7 @@ header {
   }
 }
 @media (max-width: 960px) and (orientation: landscape) {
-  header {
+  .main__header {
     height: 15vh;
   }
   .container__width {
@@ -1290,6 +1290,15 @@ header {
     transform: rotate(-45deg);
     top: 20px;
     left: 8px;
+  }
+  .nav__item {
+    margin: 0.5vh 0;
+  }
+  .show li > a {
+    padding: 0;
+  }
+  .nav__item > a {
+    font-size: 1.5rem;
   }
   .container__slideshow,
   .slideshow__slider {
@@ -1423,7 +1432,7 @@ header {
   .container__background {
     height: 70vh;
   }
-  header {
+  .main__header {
     height: 17vh;
   }
   .navbar__logo {
@@ -1706,7 +1715,7 @@ header {
 }
 
 @media (max-width: 1025px) and (orientation: portrait) {
-  header {
+  .main__header {
     height: 9vh;
   }
   .navbar__nav {
@@ -1832,6 +1841,9 @@ header {
     top: 20px;
     left: 8px;
   }
+  .show li > a {
+    padding: 0;
+  }
 
   .navbar__logo {
     width: 45vw;
@@ -1839,7 +1851,7 @@ header {
     top: 50%;
     transform: translate(0, -50%);
   }
-  header {
+  .main__header {
     height: 10vh;
   }
   .navbar {
@@ -2000,7 +2012,7 @@ header {
     height: 4vh;
   }
 
-  header {
+  .main__header {
     height: 10vh;
   }
   .container__details {
@@ -2075,27 +2087,12 @@ header {
 }
 
 @media (max-width: 570px) and (orientation: portrait) {
-  .container__width {
-    max-width: 100%;
-  }
-  .container__slideshow {
-    height: 250px;
-  }
-  .slideshow__slider {
-    height: 250px;
-  }
-  .slideshow__caption > p {
-    max-width: 300px;
-    font-size: 1.5rem;
-    line-height: 20px;
-    padding: 10px;
-    margin: 0 auto;
-  }
-  .container__main {
-    max-width: 90vw;
+  .main__header {
+    height: 13vh;
   }
   .navbar__logo {
-    width: 60vw;
+    width: 55vw;
+    height: 60%;
     background-position-y: 65%;
   }
   .nav__item > a {
@@ -2104,7 +2101,7 @@ header {
   }
   .container__details {
     align-items: center;
-    height: 10vh;
+    height: 12vh;
   }
   .details__social > img {
     padding: 1px;
@@ -2125,15 +2122,45 @@ header {
     display: flex;
     flex-direction: column;
   }
+  .container__width {
+    max-width: 100%;
+  }
+  .container__slideshow {
+    height: 250px;
+  }
+  .slideshow__slider {
+    height: 250px;
+  }
+  .slideshow__caption > p {
+    max-width: 300px;
+    font-size: 1.5rem;
+    line-height: 20px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .container__main {
+    max-width: 90vw;
+  }
+  .slideshow__caption {
+    max-width: 400px;
+  }
   .main__tabs {
-    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 15px auto 7vh auto;
   }
   .main__tabs > p {
+    width: 33.333%;
     padding: 2px;
-    line-height: 10px;
+    line-height: 15px;
+    font-size: 1.1rem;
   }
+
   .main__paragraph {
     font-size: 1.2rem;
+    padding: 0;
+    margin-top: 4vh;
   }
   .container__gallery {
     flex-wrap: wrap;
@@ -2249,8 +2276,8 @@ header {
 }
 
 @media (max-width: 415px) and (orientation: portrait) {
-  header {
-    height: 8vh;
+  .main__header {
+    height: 11vh;
   }
   #hamburger {
     width: 20px;
@@ -2323,13 +2350,6 @@ header {
   .details__social {
     display: flex;
     flex-direction: column;
-  }
-  .main__tabs {
-    margin: 15px 0;
-  }
-  .main__tabs > p {
-    padding: 2px;
-    line-height: 10px;
   }
 
   .container__gallery {
@@ -2437,7 +2457,7 @@ header {
     font-size: 1.3rem;
   }
   .navbar__logo {
-    width: 50vw;
+    width: 65vw;
     background-position-y: 50%;
   }
   .container__details {
@@ -2454,6 +2474,10 @@ header {
   .dot:hover {
     width: 6px;
     height: 6px;
+  }
+  .main__tabs > p {
+    font-size: 0.9rem;
+    line-height: 12px;
   }
   .main__paragraph {
     font-size: 1rem;
