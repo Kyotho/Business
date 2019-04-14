@@ -35,9 +35,12 @@ function hamburger() {
   $('#hamburger').click(function() {
     $(this).toggleClass('open');
   });
+
   //Closing hamburger menu after clicking link
   $('#main_nav a').on('click', function() {
-    $('#hamburger').click();
+    if ($(window).width() < 960) {
+      $('#hamburger').click();
+    }
   });
 }
 
